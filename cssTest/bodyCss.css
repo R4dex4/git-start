@@ -3,13 +3,17 @@ body {
     top:0;
     background-image: url('../image/bc1.jpg');
     background-size: cover;
+    background-attachment: fixed;
 /*     
     * body가 div보다 z-index가 앞서게 하려 했으나 실패함; 
 background-size :
 contain ~> Scales the image as large as possible without cropping or stretching the image -> 원본 사이즈 변경하지 않고 채우기.
 cover ~> Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, 
          it is cropped either vertically or horizontally so that no empty space remains. -> 원본 사이즈에서 남는 부분 짤려 나감.
-
-*/    
-
+auto ~> Scales the background image in the corresponding direction such that its intrinsic proportions are maintained.
+<length> ~> 길이형인 px, em 등을 활용할 수 있다는 뜻인 것 같음.
+<percentage> Stretches the image in the corresponding dimension to the specified percentage of the background positioning area. 
+            The background positioning area is determined by the value of background-origin (by default, the padding box). 
+            However, if the background's background-attachment value is fixed, the positioning area is instead the entire viewport. Negative values are not allowed.
+*/
 }

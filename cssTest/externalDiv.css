@@ -6,8 +6,19 @@ div {
     width: 100%;
     height: 300px;
     background-image: url('../image/bc2.jpg');
-    background-size:cover;
+    background-size: cover;
     text-align: center;
+/*     background-attachment: fixed;
+ */
 }
 
-/* div 텍스트 얼라인 센터 적용 */
+
+
+/* div 텍스트 얼라인 센터 적용 
+background-attachment 실험 예정임.
+percentage 부터 실험한다. 안한다.
+
+fixed 상태에서 div는 안움직이고 백그라운드만 움직이는 기현상 발생;
+>> background가 뷰포트에 고정되었음을 확인.
+>> background-attachment: fixed; 이거로 뷰포트에 배경 고정시키는 거였다.
+*/
