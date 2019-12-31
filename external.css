@@ -1,0 +1,10 @@
+div {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    display:block;
+    width: 800px;
+    height: 500px;
+    background-color:linen;
+    border : 1px dotted blue;
+}
