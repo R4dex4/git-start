@@ -2,7 +2,7 @@ span {
     display: block;
     position: relative;
     text-anchor: middle;
-    font: bold 100px consolas, sans-serif;
+    font: bold 5em consolas, sans-serif;
     color: black;
 }
 

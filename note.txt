@@ -1,10 +1,19 @@
 
 :: 공부해야 할 것들 알림 :: 
 
-1. css Text 외부 파일에 저장하고 불러오는거.
-2. JavaScript 마찬가지로 스크립트파일 따로 저장해서 외부에서 불러오기.
-3. meta 관련하여 공부할 것
-4. form 형식의 데이터 전송 방법 공부하기.
-5. z-index 연습
-6. css중 position, display에 대해 이해하고 실험해보기
-7. text 꾸미기 연습
+CSS3
+
+1. css Text 외부 파일에 저장하고 불러오는거. (V)
+2. meta 관련하여 공부할 것
+3. form 형식의 데이터 전송 방법 공부하기.
+4. z-index 연습
+5. css중 position, display에 대해 이해하고 실험해보기
+6. text 꾸미기 연습
+7. overflow : 컨텐츠가 width, height의 태그 크기를 넘어가는 경우, 콘텐츠를 자를 것인지 말 것인지. [visible='박스 넘어서도 출력', hidden='박스뒤는 감춤'
+              scorll='스크롤 바 부착', auto='박스 넘어가면 자동 스크롤 생성']
+
+
+JS
+
+1. JavaScript 마찬가지로 스크립트파일 따로 저장해서 외부에서 불러오기.
+2. radio폼에서 focus 변경에 따른 value값 추출하기.

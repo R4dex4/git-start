@@ -3,99 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS 외부 파일</title>
-    <link href="externalDiv.css" type="text/css" rel="stylesheet">
+    <link href="externalbanner.css" type="text/css" rel="stylesheet">
     <style>
     @import url('externalSpan.css');
     @import url('bodyCss.css');
     </style>
 </head>
 <body>
-    <div>
+    <div id="banner">
         <p>
             <span>CSS 외부 스타일 시트 파일 불러오기</span><br>
             외부로부터 CSS 파일 불러오는 법
         </p>
+        <form onchange="changeBanner()">
+            <input type="radio" name="divBc" value="../image/bc1.jpg">
+            <input type="radio" name="divBc" value="../image/bc2.jpg">
+            <input type="radio" name="divBc" value="../image/bc3.jpg">
+            <input type="radio" name="divBc" value="../image/bc4.jpg">
+            <input type="radio" name="divBc" value="../image/bc5.jpg">
+        </form>
     </div>
+    <script>
+        function changeBanner(){
+            let rad = document.getElementsByName("divBc");
+            let banner = document.getElementById("banner");
+            for(let i=0;i<rad.length;i++){
+                if(rad[i].checked == true)
+                    banner.style.backgroundImage = `url('${rad[i].value}')`;
+            }
+        }
+    </script>
     <p>
         스크롤 목적
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </p>
 </body>
 </html>
