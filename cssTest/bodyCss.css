@@ -1,0 +1,15 @@
+body {
+    margin:0;
+    top:0;
+    background-image: url('../image/bc1.jpg');
+    background-size: cover;
+/*     
+    * body가 div보다 z-index가 앞서게 하려 했으나 실패함; 
+background-size :
+contain ~> Scales the image as large as possible without cropping or stretching the image -> 원본 사이즈 변경하지 않고 채우기.
+cover ~> Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, 
+         it is cropped either vertically or horizontally so that no empty space remains. -> 원본 사이즈에서 남는 부분 짤려 나감.
+
+*/    
+
+}

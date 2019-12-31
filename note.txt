@@ -7,3 +7,4 @@
 4. form 형식의 데이터 전송 방법 공부하기.
 5. z-index 연습
 6. css중 position, display에 대해 이해하고 실험해보기
+7. text 꾸미기 연습
