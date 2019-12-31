@@ -11,7 +11,8 @@ CSS3
 6. text 꾸미기 연습
 7. overflow : 컨텐츠가 width, height의 태그 크기를 넘어가는 경우, 콘텐츠를 자를 것인지 말 것인지. [visible='박스 넘어서도 출력', hidden='박스뒤는 감춤'
               scorll='스크롤 바 부착', auto='박스 넘어가면 자동 스크롤 생성']
-
+8. 포지션 어디 기준으로 할 것인지.. 포지션 연습 필요.
+9. setInterval 사용하기
 
 JS
 

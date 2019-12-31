@@ -9,12 +9,13 @@
     @import url('bodyCss.css');
     </style>
 </head>
-<body>
+<body onload="autoBannerChange()">
     <div id="banner">
         <p>
             <span>CSS 외부 스타일 시트 파일 불러오기</span><br>
             외부로부터 CSS 파일 불러오는 법
         </p>
+        <br><br><br><br><br>
         <form onchange="changeBanner()">
             <input type="radio" name="divBc" value="../image/bc1.jpg">
             <input type="radio" name="divBc" value="../image/bc2.jpg">
@@ -24,13 +25,26 @@
         </form>
     </div>
     <script>
+        let i = 0;
+        let rad = document.getElementsByName("divBc");
+        let banner = document.getElementById("banner");
         function changeBanner(){
-            let rad = document.getElementsByName("divBc");
-            let banner = document.getElementById("banner");
-            for(let i=0;i<rad.length;i++){
-                if(rad[i].checked == true)
+            for(i=0;i<rad.length;i++){
+                if(rad[i].checked == true){
                     banner.style.backgroundImage = `url('${rad[i].value}')`;
+                break;
+                }    
             }
+        }
+        function autobase() {
+            if(i==4) {i = 0;}
+            else i++;
+            banner.style.backgroundImage = `url('${rad[i].value}')`;  
+        }
+        
+        function autoBannerChange() {
+            let i = 0;
+            let timerID = setInterval("autobase()",3000); 
         }
     </script>
     <p>
